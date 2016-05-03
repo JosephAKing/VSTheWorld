@@ -1,0 +1,14 @@
+{
+  "AppSettings": {
+    "SiteEmailAddress": "jking.me04@gmail.com",
+    "BingMapsKey": "ENVIRONMENTAL VARIABLE"
+  },
+  "SMTPSettings": {
+    "ServerName": "smtp.gmail.com",
+    "UserName": "jking.me04@gmail.com",
+    "Password": "ENVIRONMENTAL VARIABLE"
+  },
+  "Data": {
+    "WorldContextConnection": "Server=(localdb)\\ProjectsV13;Database=VSTheWorldDB;Trusted_Connection=true;MultipleActiveResultSets=true;"
+  }
+  }

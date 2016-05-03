@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head >
+	<title>The World</title>
+	<meta charset="utf-8"/>
+
+	<link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+	<div id ="sidebar">
+		<img class="headshot" src="~/img/Bob.jpeg" alt="headshot"/>
+		<span id="username">Bob Holdings</span>
+		<ul class="menu">
+			<li class="active"><a href="#">Home</a></li>
+			<li class="inactive"><a href="#">About</a></li>
+			<li class="inactive"><a href="#">Contact</a></li>
+		</ul>
+	</div>
+	<div id="mainwrapper">
+		<div id="main">
+			<button id="toggleSidebar">Hide Menu</button>
+			<H1> Hello World! </H1>
+			<form>
+				<label>Date:      </label><input type="date" /><br />
+				<label>Location:  </label><input type="text" />
+				<br />
+				<br /><input type="submit" value="Add" /><span>  </span><input type="reset" />
+			</form>
+		</div>
+		<div id="footer">
+			&copy; 2016 JKing
+		</div>
+	</div>
+
+	<script type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="~/js/site.js"></script>
+	</body>
+</html>

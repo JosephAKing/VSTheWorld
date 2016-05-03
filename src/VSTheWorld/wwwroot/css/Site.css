@@ -1,0 +1,98 @@
+﻿/*site.css*/
+/*body {
+	background-color: #EEE;
+	font-family: sans-serif;
+	font-size: 14px;
+	margin: 0;
+}
+
+label {
+	font-weight: bold;
+	display: block;
+}
+
+input[type=text], input[type=password], input[type=password], input[type=tel], input[type=email],
+input[type=date], textarea {
+	width: 500px;
+}
+
+input {
+	width: 100px;
+}*/
+
+/*#main {
+	padding: 3px;
+	margin: 0;
+}
+
+#footer {
+	background-color: #8a8a8a;
+	color: #EEE;
+	padding: 3px;
+	margin-top: 5px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}*/
+
+
+#mainwrapper {
+	margin: 0 0 0 250px;
+	-moz-transition: margin ease .4s;
+	-o-transition: margin ease .4s;
+	-webkit-transition: margin ease .4s;
+	transition: margin ease .4s;
+}
+
+	#mainwrapper.hidesidebar {
+		margin: 0px;
+		-moz-transition: margin ease .4s;
+		-o-transition: margin ease .4s;
+		-webkit-transition: margin ease .4s;
+		transition: margin ease .4s;
+	}
+
+.headshot {
+	max-width: 50px;
+	border: 1px solid black;
+	padding: 2px;
+}
+
+/*.menu {
+	font-size: 12px;
+	color: #EEE;
+	list-style-type: none;
+}
+
+	.menu li.active {
+		font-weight: bold;
+	}*/
+
+#sidebar {
+	position: fixed;
+	height: 100%;
+	width: 250px;
+	overflow: hidden;
+	left: 0;
+	-moz-transition: left ease .4s;
+	-o-transition: left ease .4s;
+	-webkit-transition: left ease .4s;
+	transition: left ease .4s;
+}
+
+	#sidebar.hidesidebar {
+		left: -250px;
+		-moz-transition: left ease .4s;
+		-o-transition: left ease .4s;
+		-webkit-transition: left ease .4s;
+		transition: left ease .4s;
+	}
+
+    /* COLOR CODE THE VALIDATION ERRORS FROM ASP OBJECT MAPPING */
+/*.field-validation-error {
+    color: red;
+}
+
+.input-validation-error {
+    background-color: rgba(255, 0, 0, 0.44);
+}*/

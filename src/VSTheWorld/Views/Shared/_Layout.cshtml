@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>The World - @ViewBag.Title</title>
+	<meta charset="utf-8" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootswatch/yeti/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+
+
+<body>
+    <div id="sidebar">
+		<img class="headshot" src="~/img/Bob.jpeg" alt="headshot" />
+		<span id="username">Bob Holdings</span>
+		<ul class="nav">
+			<li class="active"><a asp-controller="App" asp-action="Index">Home</a></li>
+			<li class="inactive"><a asp-controller="App" asp-action="About">About</a></li>
+			<li class="inactive"><a asp-controller="App" asp-action="Contact">Contact</a></li>
+		</ul>
+	</div>
+	<div id="mainwrapper" class="panel-body">
+        <div id="topbar">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-1">
+                            <button id="toggleSidebar" class="btn btn-primary">
+                                <i class="fa fa-angle-double-left"></i>
+                            </button>
+                        </div>
+                        <div class="col-xs-8"> <a asp-controller="App" asp-action="Index" class="navbar-brand">The World</a></div>
+                        <div class="col-xs-3">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="#" class="btn btn-sm btn-info">
+                                        <i class="fa fa-save"></i> Save
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn btn-sm btn-info">
+                                        <i class="fa fa-print"></i> Print
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="footer" class="container-fluid text-center bottom">
+            <div class="navbar navbar-inverse navbar-fixed-bottom">
+                <p class="text-info">&copy; 2016 JKing</p>
+            </div>
+        </div>
+		<div id="main" class="container-fluid">
+			<div id="mainbody">
+				@RenderBody()
+			</div>
+		</div>
+    </div>
+
+	<script type="text/javascript" src="~/lib/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="~/js/site.js"></script>
+    
+    @RenderSection("Scripts", false)
+</body>
+</html>
